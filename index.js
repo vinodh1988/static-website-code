@@ -37,7 +37,7 @@ function( e ) {
     let form = $('#form1')[0]
   console.log('this is getting called')
   $.ajax( {
-    url: 'http://localhost:3000/upload',
+    url: 'http://3.6.87.188:5000/upload-image',
     type: 'POST',
     data: new FormData( form ),
     processData: false,
@@ -56,7 +56,7 @@ $( '#btn2' ).click( function( e ) {
     e.preventDefault();
     let form = $('#form2')[0]
   $.ajax( {
-    url: 'http://localhost:3000/upload',
+    url: 'http://3.6.87.188:5000/upload-image',
     type: 'POST',
     data: new FormData( form ),
     processData: false,
